@@ -1,0 +1,138 @@
+// reset
+* {
+	outline: none !important;
+
+	&:focus {
+		outline: none !important;
+	}
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+body{
+    background-color: #E9F2F9;
+}
+
+// main box
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    h1{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #9CC4E4;
+        font-size: 70px;
+        font-family: 'Titillium Web', sans-serif;
+        
+        span.name{
+            color: #3A89C9;
+        }
+        
+        &.clock{
+            font-size: 170px;
+            margin: 70px 0px;
+            color: #F26C4F;
+            white-space: nowrap;
+            
+            span.small{
+                font-size: 40px;
+                color: #3A89C9;
+                vertical-align: middle;
+            }
+        }
+        
+        &.hidden{
+            display: none;
+        }
+    }
+    
+    // lunchbox
+    .lunchbox{
+        display: none;
+    }
+}
+
+// modal
+section.preference{
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(255,255,255,0.9);
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+    
+    h1{
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+    
+    h2{
+        margin-bottom: 30px;
+    }
+    
+    input{
+        width: 100%;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px solid #3A89C9;
+        background: transparent;
+        font-size: 30px;
+    }
+    
+    .save{
+        border: none;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Titillium Web', sans-serif;
+        background-color:  #F26C4F;
+        color: white;
+        float: right;
+        margin-top: 40px;
+        
+        &:hover{
+            background-color: darken(#F26C4F,20);
+        }
+    }
+}
+
+// reset button
+button{
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    background-color: #F26C4F;
+    color: white;
+    
+    &.reset{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        display: none;
+    }
+    
+    &:hover{
+        background-color: darken(#F26C4F,20);
+    }
+    
+}
+
+
+
